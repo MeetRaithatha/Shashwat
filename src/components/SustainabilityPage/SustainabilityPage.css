@@ -1,0 +1,120 @@
+.sustainability-page {
+    padding-top: 90px;
+  }
+  
+  .approach-section {
+    padding: 80px 20px;
+    background-color: var(--light-gray);
+  }
+  
+  .approach-steps {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .approach-step {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+  .step-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  .metrics-section {
+    padding: 80px 20px;
+    background-color: white;
+  }
+  
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .metric-card {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .metric-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .metric-label {
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  
+  .certifications-section {
+    padding: 80px 20px;
+    background-color: var(--light-gray);
+  }
+  
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .certification {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certification img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+  }
+  
+  .certification h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .approach-step {
+      flex-direction: column;
+    }
+    
+    .step-number {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }

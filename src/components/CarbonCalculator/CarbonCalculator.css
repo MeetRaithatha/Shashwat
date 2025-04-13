@@ -1,0 +1,120 @@
+.calculator-page {
+    padding-top: 90px;
+  }
+  
+  .calculator-section {
+    padding: 60px 20px;
+  }
+  
+  .calculator-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .form-group input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    height: 8px;
+    background: var(--light-gray);
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .form-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    font-family: var(--font-family);
+  }
+  
+  .calculate-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calculate-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .result-section {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .result-value {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .result-comparison {
+    margin: 20px 0;
+  }
+  
+  .result-comparison ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .recommendations {
+    margin-top: 20px;
+  }
+  
+  .recommendations h4 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+  
+  .recommendations ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .calculator-form {
+      padding: 30px 20px;
+    }
+  }
