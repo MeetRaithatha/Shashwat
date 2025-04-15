@@ -7,7 +7,7 @@ function SustainabilityPage() {
     <main className="page sustainability-page">
       <section className="hero-section">
         <div className="hero-image">
-          <img src="/api/placeholder/1440/400" alt="Sustainability" />
+          <img src="/sustainability.jpg" alt="Sustainability" />
         </div>
         <div className="hero-content">
           <h1>Our Sustainability Commitment</h1>
@@ -104,17 +104,14 @@ function SustainabilityPage() {
         </div>
         <div className="certifications-grid">
           <div className="certification">
-            <img src="/api/placeholder/150/150" alt="LEED Certified" />
             <h3>LEED Certified</h3>
             <p>Leadership in Energy and Environmental Design</p>
           </div>
           <div className="certification">
-            <img src="/api/placeholder/150/150" alt="WELL Certified" />
             <h3>WELL Certified</h3>
             <p>Focus on human health and wellness</p>
           </div>
           <div className="certification">
-            <img src="/api/placeholder/150/150" alt="Living Building Challenge" />
             <h3>Living Building Challenge</h3>
             <p>The most rigorous sustainability standard</p>
           </div>
