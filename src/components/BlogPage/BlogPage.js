@@ -7,7 +7,7 @@ function BlogPage() {
     <main className="page blog-page">
       <section className="hero-section">
         <div className="hero-image">
-          <img src="/api/placeholder/1440/400" alt="Sustainability Blog" />
+          <img src="/blog.png" alt="Sustainability Blog" />
         </div>
         <div className="hero-content">
           <h1>Sustainability Insights</h1>
@@ -20,7 +20,7 @@ function BlogPage() {
           {BLOG_POSTS.map(post => (
             <article key={post.id} className="blog-post">
               <div className="blog-post-image">
-                <img src={post.image} alt={post.title} />
+                <img src='/blog1.png' alt={post.title} />
               </div>
               <div className="blog-post-content">
                 <div className="post-meta">
