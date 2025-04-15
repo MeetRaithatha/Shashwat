@@ -40,7 +40,7 @@ function CarbonCalculator() {
     <main className="page calculator-page">
       <section className="hero-section">
         <div className="hero-image">
-          <img src="/api/placeholder/1440/400" alt="Carbon Calculator" />
+          <img src="/cc.png" alt="Carbon Calculator" />
         </div>
         <div className="hero-content">
           <h1>Carbon Footprint Calculator</h1>
