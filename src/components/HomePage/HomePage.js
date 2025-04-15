@@ -8,31 +8,11 @@ function HomePage() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-image">
-          <img src="/api/placeholder/1440/600" alt="Sustainable building in nature" />
+          <img src="/home.png" alt="Sustainable building in nature" />
         </div>
         <div className="hero-content">
           <h1>Building in Harmony with Nature</h1>
           <p>Creating sustainable developments that benefit both people and the planet</p>
-          <div className="hero-search">
-            <h2>Explore Our Projects</h2>
-            <div className="search-form">
-              <div className="search-row">
-                <select>
-                  <option value="">Project Type</option>
-                  <option value="green-buildings">Green Buildings</option>
-                  <option value="communities">Sustainable Communities</option>
-                  <option value="urban-renewal">Urban Renewal</option>
-                </select>
-                <select>
-                  <option value="">Location</option>
-                  <option value="north-america">North America</option>
-                  <option value="europe">Europe</option>
-                  <option value="asia">Asia</option>
-                </select>
-              </div>
-              <button className="search-button">View Projects</button>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -94,7 +74,7 @@ function HomePage() {
           {CASE_STUDIES.slice(0, 3).map(study => (
             <div key={study.id} className="case-study-card">
               <div className="case-study-image">
-                <img src={study.image} alt={study.title} />
+                <img src='homeproj.jpeg' alt={study.title} />
               </div>
               <div className="case-study-info">
                 <h3>{study.title}</h3>
@@ -104,7 +84,7 @@ function HomePage() {
                     <span key={index}>{feature}</span>
                   ))}
                 </div>
-                <a href={study.link} className="view-details">View Case Study</a>
+                <a href='#' className="view-details">View Case Study</a>
               </div>
             </div>
           ))}
@@ -121,7 +101,7 @@ function HomePage() {
           {BLOG_POSTS.map(post => (
             <div key={post.id} className="blog-post-card">
               <div className="blog-post-image">
-                <img src={post.image} alt={post.title} />
+                <img src='homeproj.jpeg' alt={post.title} />
               </div>
               <div className="blog-post-content">
                 <div className="post-meta">
@@ -130,7 +110,7 @@ function HomePage() {
                 </div>
                 <h3>{post.title}</h3>
                 <p className="excerpt">{post.excerpt}</p>
-                <a href={post.link} className="read-more">Read Article</a>
+                <a href="#" className="read-more">Read Article</a>
               </div>
             </div>
           ))}
