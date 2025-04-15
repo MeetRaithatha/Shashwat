@@ -1,45 +1,28 @@
+import {
+  FaProjectDiagram,
+  FaLeaf,
+  FaBookOpen,
+  FaCalculator,
+  FaBlog,
+  FaInfoCircle,
+} from 'react-icons/fa';
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Youtube,
+} from 'lucide-react';
+
 export const NAVIGATION_ITEMS = [
-  {
-    title: "Our Projects",
-    link: "/projects",
-    subItems: [
-      { title: "Green Buildings", link: "/green-buildings" },
-      { title: "Sustainable Communities", link: "/sustainable-communities" },
-      { title: "Urban Renewal", link: "/urban-renewal" },
-      { title: "All Projects", link: "/all-projects" },
-    ]
-  },
-  {
-    title: "Sustainability",
-    link: "/sustainability",
-    subItems: [
-      { title: "Our Approach", link: "/sustainability/approach" },
-      { title: "Eco-Friendly Materials", link: "/eco-materials" },
-      { title: "Energy Efficiency", link: "/energy-efficiency" },
-      { title: "Certifications", link: "/certifications" },
-    ]
-  },
-  {
-    title: "Resources",
-    link: "/resources",
-    subItems: [
-      { title: "Case Studies", link: "/case-studies" },
-      { title: "Carbon Calculator", link: "/carbon-calculator" },
-      { title: "Research", link: "/research" },
-      { title: "Blog", link: "/blog" },
-    ]
-  },
-  {
-    title: "About Us",
-    link: "/about",
-    subItems: [
-      { title: "Our Mission", link: "/mission" },
-      { title: "Team", link: "/team" },
-      { title: "Partners", link: "/partners" },
-      { title: "Careers", link: "/careers" },
-    ]
-  },
+  { title: 'Our Projects', link: '/projects', icon: <FaProjectDiagram /> },
+  { title: 'Sustainability', link: '/sustainability', icon: <FaLeaf /> },
+  { title: 'Case Studies', link: '/case-studies', icon: <FaBookOpen /> },
+  { title: 'Carbon Calculator', link: '/carbon-calculator', icon: <FaCalculator /> },
+  { title: 'Blog', link: '/blog', icon: <FaBlog /> },
+  { title: 'About Us', link: '/about', icon: <FaInfoCircle /> },
 ];
+
 
 export const PROJECT_TYPES = [
   {
@@ -177,9 +160,9 @@ export const FOOTER_LINKS = [
   {
     title: "Projects",
     links: [
-      { text: "Green Buildings", url: "/green-buildings" },
-      { text: "Sustainable Communities", url: "/sustainable-communities" },
-      { text: "Urban Renewal", url: "/urban-renewal" },
+      { text: "Green Buildings", url: "/projects" },
+      { text: "Sustainable Communities", url: "/projects" },
+      { text: "Urban Renewal", url: "/projects" },
       { text: "All Projects", url: "/projects" }
     ]
   },
@@ -187,26 +170,26 @@ export const FOOTER_LINKS = [
     title: "Sustainability",
     links: [
       { text: "Our Approach", url: "/sustainability" },
-      { text: "Impact Reports", url: "/impact-reports" },
-      { text: "Certifications", url: "/certifications" },
-      { text: "Research", url: "/research" }
+      { text: "Impact Reports", url: "/sustainability" },
+      { text: "Certifications", url: "/sustainability" },
+      { text: "Research", url: "/sustainabilty" }
     ]
   },
   {
     title: "Organization",
     links: [
       { text: "About Us", url: "/about" },
-      { text: "Careers", url: "/careers" },
-      { text: "Partners", url: "/partners" },
-      { text: "Contact", url: "/contact" }
+      { text: "Careers", url: "/about" },
+      { text: "Partners", url: "/about" },
+      { text: "Contact", url: "/about" }
     ]
   }
 ];
 
 export const SOCIAL_MEDIA_LINKS = [
-  { name: "Facebook", url: "https://facebook.com", icon: "facebook" },
-  { name: "Instagram", url: "https://instagram.com", icon: "instagram" },
-  { name: "Twitter", url: "https://twitter.com", icon: "twitter" },
-  { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-  { name: "YouTube", url: "https://youtube.com", icon: "youtube" }
+  { name: 'Facebook', url: 'https://facebook.com', icon: Facebook },
+  { name: 'Instagram', url: 'https://instagram.com', icon: Instagram },
+  { name: 'Twitter', url: 'https://twitter.com', icon: Twitter },
+  { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin },
+  { name: 'YouTube', url: 'https://youtube.com', icon: Youtube },
 ];
