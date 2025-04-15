@@ -6,7 +6,7 @@ function AboutPage() {
     <main className="page about-page">
       <section className="hero-section">
         <div className="hero-image">
-          <img src="/api/placeholder/1440/400" alt="About Us" />
+          <img src="/about.jpg" alt="About Us" />
         </div>
         <div className="hero-content">
           <h1>About Our Organization</h1>
@@ -50,19 +50,16 @@ function AboutPage() {
         </div>
         <div className="team-grid">
           <div className="team-member">
-            <img src="/api/placeholder/200/200" alt="Dr. Sarah Green" />
             <h3>Dr. Sarah Green</h3>
             <p className="position">CEO & Founder</p>
             <p className="bio">Environmental scientist with 20+ years in sustainable urban development</p>
           </div>
           <div className="team-member">
-            <img src="/api/placeholder/200/200" alt="Michael Chen" />
             <h3>Michael Chen</h3>
             <p className="position">Chief Architect</p>
             <p className="bio">Pioneer in biophilic design and green building technologies</p>
           </div>
           <div className="team-member">
-            <img src="/api/placeholder/200/200" alt="Elena Rodriguez" />
             <h3>Elena Rodriguez</h3>
             <p className="position">Director of Sustainability</p>
             <p className="bio">Expert in circular economy and regenerative design principles</p>
@@ -77,16 +74,16 @@ function AboutPage() {
         </div>
         <div className="partners-grid">
           <div className="partner-logo">
-            <img src="/api/placeholder/150/80" alt="Green Building Council" />
+            <img src="/gbc.png" alt="Green Building Council" />
           </div>
           <div className="partner-logo">
-            <img src="/api/placeholder/150/80" alt="World Wildlife Fund" />
+            <img src="/wwf.png" alt="World Wildlife Fund" />
           </div>
           <div className="partner-logo">
-            <img src="/api/placeholder/150/80" alt="Sustainable Cities Initiative" />
+            <img src="/sci.png" alt="Sustainable Cities Initiative" />
           </div>
           <div className="partner-logo">
-            <img src="/api/placeholder/150/80" alt="Renewable Energy Alliance" />
+            <img src="/rea.png" alt="Renewable Energy Alliance" />
           </div>
         </div>
       </section>
