@@ -1,26 +1,11 @@
-/**
- * Format currency with dollar sign and commas
- * @param {number} amount - Amount to format
- * @returns {string} Formatted currency string
- */
 export const formatCurrency = (amount) => {
   return `$${amount.toLocaleString()}`;
 };
 
-/**
- * Get readable square footage
- * @param {number} sqft - Square footage
- * @returns {string} Formatted square footage
- */
 export const formatSqFt = (sqft) => {
   return `${sqft.toLocaleString()} sq ft`;
 };
 
-/**
- * Format phone number in (XXX) XXX-XXXX format
- * @param {string} phoneNumber - Phone number to format
- * @returns {string} Formatted phone number
- */
 export const formatPhoneNumber = (phoneNumber) => {
   const cleaned = ('' + phoneNumber).replace(/\D/g, '');
   const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
@@ -30,11 +15,6 @@ export const formatPhoneNumber = (phoneNumber) => {
   return phoneNumber;
 };
 
-/**
- * Check if element is in viewport
- * @param {HTMLElement} element - DOM element to check
- * @returns {boolean} True if element is in viewport
- */
 export const isInViewport = (element) => {
   const rect = element.getBoundingClientRect();
   return (
@@ -45,10 +25,6 @@ export const isInViewport = (element) => {
   );
 };
 
-/**
- * Get available locations
- * @returns {Array} Array of location objects
- */
 export const getAvailableLocations = () => {
   return [
     { code: 'NA', name: 'North America' },
@@ -60,12 +36,6 @@ export const getAvailableLocations = () => {
   ];
 };
 
-/**
- * Debounce function to limit function calls
- * @param {Function} func - Function to debounce
- * @param {number} wait - Wait time in milliseconds
- * @returns {Function} Debounced function
- */
 export const debounce = (func, wait) => {
   let timeout;
   return function executedFunction(...args) {
@@ -78,16 +48,10 @@ export const debounce = (func, wait) => {
   };
 };
 
-/**
- * Calculate carbon footprint based on user inputs
- * @param {Object} inputs - User input values
- * @returns {number} Estimated carbon footprint in kg CO₂
- */
 export const calculateCarbonFootprint = (inputs) => {
   const { homeSize, energySource, transportation, diet } = inputs;
   let footprint = 0;
-  
-  // Home energy calculation
+
   if (energySource === 'renewable') {
     footprint += homeSize * 0.5;
   } else if (energySource === 'mixed') {
@@ -95,11 +59,9 @@ export const calculateCarbonFootprint = (inputs) => {
   } else {
     footprint += homeSize * 4;
   }
-  
-  // Transportation calculation
+
   footprint += transportation * 0.2;
-  
-  // Diet calculation
+
   if (diet === 'vegetarian') {
     footprint += 500;
   } else if (diet === 'vegan') {
@@ -107,6 +69,6 @@ export const calculateCarbonFootprint = (inputs) => {
   } else {
     footprint += 1000;
   }
-  
+
   return Math.round(footprint);
 };
