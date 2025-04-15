@@ -31,7 +31,7 @@ function HomePage() {
               <div className="project-type-info">
                 <h3>{type.name}</h3>
                 <p>{type.description}</p>
-                <a href={type.link} className="learn-more">Explore Projects</a>
+                <a href="#" className="learn-more">Explore Projects</a>
               </div>
             </div>
           ))}
