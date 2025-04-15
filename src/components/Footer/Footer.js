@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
-            <img src="/api/placeholder/160/60" alt="EcoDevelop Logo" />
+            <img src="/logo2.png" alt="EcoDevelop Logo" />
             <p className="tagline">Building with Nature</p>
           </div>
           
@@ -29,46 +29,53 @@ function Footer() {
             ))}
           </div>
         </div>
-        
-        <div className="footer-middle">
-          <div className="social-media">
-            <h3>Connect With Us</h3>
+        <div className='footer-middle'>
+          <div className="footer-social">
+            <h4>Connect With Us</h4>
             <div className="social-icons">
-              {SOCIAL_MEDIA_LINKS.map((platform, index) => (
-                <a key={index} href={platform.url} aria-label={platform.name} className="social-icon">
-                  <i className={`fab fa-${platform.icon}`}></i>
-                </a>
-              ))}
+              {SOCIAL_MEDIA_LINKS.map((platform, index) => {
+                const IconComponent = platform.icon;
+                return (
+                  <a
+                    key={index}
+                    href={platform.url}
+                    aria-label={platform.name}
+                    className="social-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <IconComponent size={22} strokeWidth={1.8} />
+                  </a>
+                );
+              })}
+            </div>
+            <div className="newsletter">
+              <h3>Stay Updated</h3>
+              <p>Subscribe to receive news and updates</p>
+              <form className="newsletter-form">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">Subscribe</button>
+              </form>
             </div>
           </div>
-          
-          <div className="newsletter">
-            <h3>Stay Updated</h3>
-            <p>Subscribe to receive news and updates</p>
-            <form className="newsletter-form">
-              <input type="email" placeholder="Your email address" required />
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
         </div>
-        
         <div className="footer-bottom">
           <div className="legal">
             <p>&copy; {currentYear} EcoDevelop. All rights reserved.</p>
             <div className="legal-links">
-              <a href="/terms">Terms of Use</a>
-              <a href="/privacy">Privacy Policy</a>
-              <a href="/accessibility">Accessibility</a>
-              <a href="/sitemap">Site Map</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Accessibility</a>
+              <a href="#">Site Map</a>
             </div>
           </div>
           
           <div className="certifications">
             <div className="cert-item">
-              <img src="/api/placeholder/50/50" alt="LEED Certified" />
+              <p>LEED Certified</p>
             </div>
             <div className="cert-item">
-              <img src="/api/placeholder/50/50" alt="B Corp Certified" />
+              <p>B Corp Certified"</p>
             </div>
           </div>
         </div>
