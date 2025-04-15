@@ -31,7 +31,7 @@ function BlogPage() {
                 <p className="excerpt">{post.excerpt}</p>
                 <div className="post-footer">
                   <span className="author">By {post.author}</span>
-                  <a href={post.link} className="read-more">Read More</a>
+                  <a href="#" className="read-more">Read More</a>
                 </div>
               </div>
             </article>
