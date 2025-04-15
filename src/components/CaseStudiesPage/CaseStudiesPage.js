@@ -7,7 +7,7 @@ function CaseStudiesPage() {
     <main className="page case-studies-page">
       <section className="hero-section">
         <div className="hero-image">
-          <img src="/api/placeholder/1440/400" alt="Case Studies" />
+          <img src="/casestudy.png" alt="Case Studies" />
         </div>
         <div className="hero-content">
           <h1>Project Case Studies</h1>
@@ -20,7 +20,7 @@ function CaseStudiesPage() {
           {CASE_STUDIES.map(study => (
             <div key={study.id} className="case-study-card">
               <div className="case-study-image">
-                <img src={study.image} alt={study.title} />
+                <img src='/cs.jpeg' alt={study.title} />
               </div>
               <div className="case-study-content">
                 <h3>{study.title}</h3>
@@ -54,7 +54,7 @@ function CaseStudiesPage() {
                     </div>
                   </div>
                 </div>
-                <a href={study.link} className="view-details">View Full Case Study</a>
+                <a href='#' className="view-details">View Full Case Study</a>
               </div>
             </div>
           ))}
